@@ -1,0 +1,7 @@
+.label{
+    -fx-text-fill: #990000;
+    -fx-font-size: 25pt ;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}

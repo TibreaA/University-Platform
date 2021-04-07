@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignIn">
+    <top>
+        <ToolBar stylesheets="@styles1.css">
+            <HBox alignment="CENTER" style="-fx-spacing: 20">
+                <ImageView fx:id="logoImage" fitHeight="55" fitWidth="65" onMouseClicked="#handleClickLogoImage">
+                </ImageView>
+            </HBox>
+            <Pane HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" style="-fx-spacing: 20">
+                <Button onAction="#handleClickButtonSignIn" text="Sign In">
+
+                </Button>
+                <Button onAction="#handleClickButtonSignUp" text="Sign Up">
+
+                </Button>
+            </HBox>
+        </ToolBar>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER">
+            <Label text="Sign In">
+            <VBox.margin>
+               <Insets bottom="30.0" />
+            </VBox.margin>
+            <font>
+               <Font name="Comic Sans MS" size="40.0" />
+            </font></Label>
+        <VBox style="-fx-spacing: 20 ">
+                <VBox alignment="CENTER" style="-fx-spacing: 20 ">
+                    <HBox alignment="CENTER" style="-fx-spacing: 2 ">
+                    <Label prefHeight="23.0" prefWidth="165.0" text="Name User:">
+                        <font>
+                            <Font name="Times New Roman Bold" size="30.0" />
+                        </font>
+
+                    </Label>
+
+                    <TextField fx:id="nameUser" maxHeight="20.0" maxWidth="180.0" >
+                        <font>
+                            <Font name="Times New Roman bold" size="20" />
+                        </font>
+                    </TextField>
+                    </HBox>
+                    <HBox alignment="CENTER" style="-fx-spacing: 2 ">
+                    <Label prefWidth="165.0" text="Password:">
+                        <font>
+                            <Font name="Times New Roman Bold" size="30.0" />
+                        </font>
+                    </Label>
+
+                    <PasswordField fx:id="passwordUser" maxHeight="20.0" maxWidth="180.0" >
+                        <font>
+                            <Font name="Times New Roman bold" size="20" />
+                        </font>
+                    </PasswordField>
+                    </HBox>
+                </VBox>
+            <VBox.margin>
+               <Insets top="20.0" bottom="20"/>
+            </VBox.margin>
+        </VBox>
+            <HBox style="-fx-spacing: 20 " alignment="CENTER">
+            <Button stylesheets="@styles2.css" alignment="CENTER" prefHeight="25.0"  text="Sign In" VBox.vgrow="NEVER" onAction="#handleClickSignIn">
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+                <Label text="Name or password incorrect!" style="-fx-text-fill:#ff0000;" fx:id="incorect">
+
+                </Label>
+            </HBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <ToolBar>
+            <HBox spacing="20">
+                <Label text="UTCN" />
+                <Label text="ADRESA: Strada Memorandumului 28, Cluj-Napoca 400114" />
+                <Label text="TELEFON: +4 0264 401 200" />
+                <Label text="FAX: +4 0264 592 055" />
+            </HBox>
+        </ToolBar>
+    </bottom>
+
+</BorderPane>

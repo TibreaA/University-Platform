@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.InformationProfesor"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <HBox alignment="CENTER">
+            <Label alignment="CENTER" text="Professor">
+                <font>
+                    <Font size="25.0" />
+                </font>
+                <HBox.margin>
+                    <Insets bottom="5.0" top="5.0" />
+                </HBox.margin></Label>
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="informationProfessor">
+
+        </ListView>
+    </center>
+
+</BorderPane>

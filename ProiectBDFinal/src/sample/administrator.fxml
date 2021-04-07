@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane  prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Administrator">
+    <top>
+        <VBox>
+            <ToolBar stylesheets="@styles1.css">
+                <HBox alignment="CENTER" style="-fx-spacing: 20">
+                    <ImageView fx:id="logoImage" fitHeight="55" fitWidth="65">
+                    </ImageView>
+                </HBox>
+                <Pane HBox.hgrow="ALWAYS" />
+                <HBox alignment="CENTER" style="-fx-spacing: 20">
+                    <Button onMouseClicked="#handleClickSignOut" text="Sign Out">
+
+                    </Button>
+                </HBox>
+            </ToolBar>
+            <ToolBar stylesheets="@styles1.css">
+                <HBox style="-fx-spacing: 20">
+                    <Button onAction="#handleClickInfo" text="My information">
+                    </Button>
+                    <Button onAction="#handleClickUsers" text="Users">
+                    </Button>
+                    <Button onAction="#handleClickCourses" text="Courses">
+                    </Button>
+                    <Button onAction="#handleClickAddCourses" text="Add Course">
+                    </Button>
+                </HBox>
+            </ToolBar>
+
+        </VBox>
+    </top>
+
+    <center>
+        <BorderPane fx:id="panelStudent">
+
+        </BorderPane>
+    </center>
+
+    <bottom>
+        <ToolBar>
+            <HBox spacing="10">
+                <Label text="UTCN" />
+                <Label text="ADRESA: Strada Memorandumului 28, Cluj-Napoca 400114" />
+                <Label text="TELEFON: +4 0264 401 200" />
+                <Label text="FAX: +4 0264 592 055" />
+            <padding>
+               <Insets top="5.0" />
+            </padding>
+            </HBox>
+        </ToolBar>
+    </bottom>
+</BorderPane>

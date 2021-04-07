@@ -1,0 +1,6 @@
+5	Avram	BD	2021-01-15
+7	Avram	BD	2021-01-15
+6	Avram	BD	2021-01-15
+4	Margin	BD	2021-01-15
+4	Margin	BD	2021-01-15
+4	Margin	BD	2021-01-15

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="@styles1.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddCurs">
+    <center>
+        <VBox alignment="CENTER">
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="Name: " />
+                <TextField fx:id="name" prefWidth="150" />
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="Id Professor: " />
+                <TextField fx:id="idProf" prefWidth="150" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="Tip: " />
+                <MenuButton fx:id="tip" prefWidth="150" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="Pondere: " />
+                <TextField fx:id="pondere" prefWidth="150" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="Description: " />
+                <TextField fx:id="description" prefWidth="150" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="Number max students: " />
+                <TextField fx:id="nrMax" prefWidth="150" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="Date start: " />
+                <DatePicker fx:id="dateStart" prefWidth="150" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefWidth="150" text="dateEnd: " />
+                <DatePicker fx:id="dateEnd" prefWidth="150" />
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+            <Button alignment="CENTER" onAction="#clickAdd" text="Add">
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin></Button>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

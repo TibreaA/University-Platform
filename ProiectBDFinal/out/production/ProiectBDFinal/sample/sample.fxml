@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top>
+        <ToolBar stylesheets="@styles1.css">
+            <HBox alignment="CENTER" style="-fx-spacing: 20">
+                <ImageView fx:id="logoImage" fitHeight="55" fitWidth="65">
+                </ImageView>
+            </HBox>
+            <Pane HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" style="-fx-spacing: 20">
+                <Button onAction="#handleClickButtonSignIn" text="Sign In">
+
+                </Button>
+                <Button onAction="#handleClickButtonSignUp" text="Sign Up">
+
+                </Button>
+            <padding>
+               <Insets right="20.0" />
+            </padding>
+            </HBox>
+        </ToolBar>
+    </top>
+
+    <center>
+        <Label fx:id="welcomeLabel" alignment="CENTER" stylesheets="@styles.css" textAlignment="CENTER">
+
+        </Label>
+    </center>
+
+    <bottom>
+        <ToolBar stylesheets="stylesToolbar.css">
+            <HBox spacing="20">
+                <Label text="UTCN" />
+                <Label text="ADRESA: Strada Memorandumului 28, Cluj-Napoca 400114" />
+                <Label text="TELEFON: +4 0264 401 200" />
+                <Label text="FAX: +4 0264 592 055" />
+            </HBox>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+        </ToolBar>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CatalogProfesor">
+
+    <top>
+
+    </top>
+    <center>
+    <VBox alignment="CENTER" spacing="20">
+        <HBox spacing="20" alignment="CENTER">
+            <VBox>
+                <Label text="Courses: "/>
+                <ListView fx:id="activitatiProfesor" onMouseClicked="#handleClickActivitate">
+
+                </ListView>
+
+            </VBox>
+
+            <VBox>
+                <Label text="Studenti: "/>
+                <ListView fx:id="studentiPeActivitate" onMouseClicked="#handleClickStudent">
+
+                </ListView>
+             </VBox>
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="20">
+
+            <VBox>
+            <Label text="Grades: "/>
+
+            <ListView fx:id="note" />
+            </VBox>
+            <VBox alignment="CENTER" spacing="20">
+                <VBox spacing=" 10">
+                <Button text="Add grade" onAction="#handleClickAdd"/>
+                <Button text="Upgrade grade" onAction="#handleClickUp"/>
+                </VBox>
+                <VBox spacing="10">
+                    <Button text="View all grades" onAction="#handleClickViewGrades"/>
+                    <Button text="Download grades" onAction="#handleClickDownloadGrades"/>
+                </VBox>
+                <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+            </VBox>
+        </HBox>
+    </VBox>
+    </center>
+</BorderPane>
